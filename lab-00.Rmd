@@ -17,15 +17,11 @@ We set up the data frame. Edit the data below to include information about your 
 
 ```{r setup-tibble}
 team_data <- tibble(
-  name = c("Peter Rabbit", "member 1", "member 2", 
-           "member 3", "member 4"),
-  github_username = c("mcgregors-garden", "username 1", "username 2", 
-                      "username 3", "username 4"), 
-  colour = c("powderblue", "colour 1", "colour 2", 
-             "colour 3", "colour 4"),
-  hobby = c("Hopping", "hobby 1", "hobby 2", 
-            "hobby 3", "hobby 4"),
-  favourite_number = c(2, NA, NA, NA, NA)
+  name = c("Marcel", "Edwin", "Josh", "Kenny", "Luke"),
+  github_username = c("marcel237", "edivan05", "jm-56", "kenny-webb", "dethbringer"), 
+  colour = c("red", "blue", "orange", "green", "red"),
+  hobby = c("gambling", "card tricks", "football", "hill walking", "writing"),
+  favourite_number = c(7,5,3,6,3)
   )
 
 team_data
@@ -47,19 +43,19 @@ p1
 ```
 
 
-*Remove this text (including the stars), and add your answer for Exercise 18 here.*
+The data shows most people liked higher numbers within 1-10
 
 ### Exercises 19
 
 Change the text of the plot title and axis labels.
 
 ```{r labelled-bar-plot}
-p1 + labs(x = "Insert text here", 
-          y = "Insert text here",
-          title = "Insert text here")
+p1 + labs(x = "Username", 
+          y = "Favourite number",
+          title = "Graph showing the my group's favourite numbers")
 ```
 
-*Remove this text (including the stars), and add your answer for Exercise 19 here.*
+The graph shows most people liked higher numbers within 1-10
 
 ### Exercise 20
 
@@ -69,4 +65,6 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-*Remove this text (including the stars) and add your answer for Exercise 20 here.*
+The data could maybe be put in a pie chart?  
+
+
